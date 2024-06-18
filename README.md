@@ -1,5 +1,5 @@
 # bike-check
-Will a Capital Bikeshare bike be free when you are?
+Will a Capital Bikeshare bike be ready when you are?
 
 # Run the Docker Container
 
