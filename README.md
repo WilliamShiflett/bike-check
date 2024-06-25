@@ -3,7 +3,7 @@ Will a Capital Bikeshare bike be ready when you are?
 
 # Run the Docker Container
 
-We all work from different computers, but this application need to run locally on any computer.
+We all work from different computers, but this application needs to run locally on any computer.
 
 Docker makes that possible.
 
