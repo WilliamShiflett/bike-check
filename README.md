@@ -1,13 +1,12 @@
-# bike-check
 Will a Capital Bikeshare bike be ready when you are?
 
-# Run the Docker Container
+Capital Bikeshare publishes its ridesharing data as part of its agreement to operate in the District of Columbia and its surrounding suburbs. Can we use the data to reliable predict when and where bikes or bike docks will be available?
 
-We all work from different computers, but this application needs to run locally on any computer.
+## Docker
 
-Docker makes that possible.
+We all work from different computers, but this application needs to run locally on any computer. Docker makes that possible.
 
-# For macOS:
+### For macOS:
 
 1. Install Homebrew, a package manager, using: https://brew.sh/
 2. Open the Terminal application and run `brew install --cask docker.rb`
@@ -17,19 +16,15 @@ Docker makes that possible.
 6. Run `docker run hello-world`
 7. If you get the error -bash: docker: command not found, you can try what's recommended here to create some necessary files: https://stackoverflow.com/a/43365425/5057333
 8. `Press ⌘ + Space to bring up Spotlight Search and enter Docker to launch Docker.` Follow the prompts to allow docker to create some necessary files.
-9. Try `docker run hello-world` again. If you don't have this image locally, Docker will fetch it for you.
-10. 
-11. If you get an error referencing the docker daemon, check for existing docker images (you may not have any): `docker image ls`
-12. There are deprecated CLI tools like docker-machine that you can use in conjunction with virtualbox to run docker...
-13. But it's easier (and not deprecated) to start docker with `open --hide --background -a Docker` or just `open -a Docker`
-14. If you're still seeing references to 
-15. Now test that Docker is working by running `docker run hello-world`
-16. Exit the container with `exit`
-17. Navigate the the repository with the desired dockerfile
-18. Run `docker build -t sandbox:bike-check-historical-database .`
-19. Docker creates an <b>image</b> with the name sandbox:bike-check-historical-database in the current directory.
-20. Have a coffee. This can take a while.
-21. Run an interactive Docker container (i.e., one you can enter commands against) based on the image you just created with `docker run -it sandbox:bike-check-historical-database`
-22. Check that the version of Python is what you expect (e.g., 3.11.6) by running `python`
-23. Run `quit()` to leave the Python interpreter.
-24. Exit all containers with `docker stop $(docker ps -a -q)`
+9. Try `docker run hello-world` again. If you don't have this image locally, Docker will fetch it for you. Your terminal should output a message saying "This message shows that your installation appears to be working correctly."
+16. Exit the container with `exit`.
+
+17. 
+18. Navigate the the repository with the desired dockerfile.
+19. Run `docker build -t sandbox:bike-check-historical-database .`
+20. Docker creates an <b>image</b> with the name sandbox:bike-check-historical-database in the current directory.
+21. Have a coffee. This can take a while.
+22. Run an interactive Docker container (i.e., one you can enter commands against) based on the image you just created with `docker run -it sandbox:bike-check-historical-database`
+23. Check that the version of Python is what you expect (e.g., 3.11.6) by running `python`
+24. Run `quit()` to leave the Python interpreter.
+25. Exit all containers with `docker stop $(docker ps -a -q)`
