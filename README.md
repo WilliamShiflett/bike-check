@@ -6,17 +6,21 @@ Capital Bikeshare publishes its ridesharing data as part of its agreement to ope
 
 We all work from different computers, but this application needs to run locally on any computer. Docker makes that possible.
 
-### For macOS:
+### For macOS after Catalina, or after than 10.15:
 
 1. Install Homebrew, a package manager, using: https://brew.sh/
 2. Open the Terminal application and run `brew install --cask docker.rb`
-3. If your macOS is too old for the latest version of Docker, e.g., Catalina, you can get an older version per this post: https://stackoverflow.com/a/75132333/5057333
-4. Get an older Docker version's brew cask and output it in your current directory: `curl https://raw.githubusercontent.com/Homebrew/homebrew-cask/1a83f3469ab57b01c0312aa70503058f7a27bd1d/Casks/docker.rb -O`
-5. Try `brew install --cask docker.rb` again.
-6. Run `docker run hello-world`
-7. If you get the error -bash: docker: command not found, you can try what's recommended here to create some necessary files: https://stackoverflow.com/a/43365425/5057333
-8. `Press ⌘ + Space to bring up Spotlight Search and enter Docker to launch Docker.` Follow the prompts to allow docker to create some necessary files.
-9. Try `docker run hello-world` again. If you don't have this image locally, Docker will fetch it for you. Your terminal should output a message saying "This message shows that your installation appears to be working correctly."
+3. Try `docker run hello-world`. If you don't have this image locally, Docker will fetch it for you. Your terminal should output a message saying "This message shows that your installation appears to be working correctly."
+
+### For macOS Catalina or lower, or prior to 10.15:
+
+4. You can get an older version of Docker using the methods outlined in this post: https://stackoverflow.com/a/75132333/5057333
+6. Get an older Docker version's brew cask and output it in your current directory: `curl https://raw.githubusercontent.com/Homebrew/homebrew-cask/1a83f3469ab57b01c0312aa70503058f7a27bd1d/Casks/docker.rb -O`
+7. Try `brew install --cask docker.rb` again.
+8. Run `docker run hello-world`
+9. If you get the error -bash: docker: command not found, you can try what's recommended here to create some necessary files: https://stackoverflow.com/a/43365425/5057333
+10. `Press ⌘ + Space to bring up Spotlight Search and enter Docker to launch Docker.` Follow the prompts to allow docker to create some necessary files.
+11. Try `docker run hello-world` again. If you don't have this image locally, Docker will fetch it for you. Your terminal should output a message saying "This message shows that your installation appears to be working correctly."
 16. Exit the container with `exit`.
 
 17. 
