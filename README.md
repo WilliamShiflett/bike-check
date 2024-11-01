@@ -1,4 +1,4 @@
-Will a Capital Bikeshare bike be ready when you are?
+### Will a Capital Bikeshare bike be ready when you are?
 
 Capital Bikeshare publishes its ridesharing data as part of its agreement to operate in the District of Columbia and its surrounding suburbs. Can we use the data to reliable predict when and where bikes or bike docks will be available?
 
